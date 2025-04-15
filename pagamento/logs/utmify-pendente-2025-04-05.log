@@ -1,0 +1,110 @@
+[2025-04-05 18:55:24] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"7e477acd-ee0c-4590-948e-bcc328570284\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-04-05 18:55:24\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Laura Silva Costa\",\"email\":\"laura.silva.costa@email.com\",\"phone\":null,\"document\":\"37852438202\",\"country\":\"BR\",\"ip\":\"2804:8734:f102:c300:d843:cb4b:51ab:275e\"},\"products\":[{\"id\":\"PROD_67f17c9c1d118\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":6170}],\"trackingParameters\":{\"utm_source\":\"organicjLj67ee1a036443bff423ea3626\"},\"commission\":{\"totalPriceInCents\":6170,\"gatewayFeeInCents\":0,\"userCommissionInCents\":6170},\"isTest\":false}"
+}
+----------------------------------------
+[2025-04-05 18:55:24] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "7e477acd-ee0c-4590-948e-bcc328570284",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-04-05 18:55:24",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Laura Silva Costa",
+        "email": "laura.silva.costa@email.com",
+        "phone": null,
+        "document": "37852438202",
+        "country": "BR",
+        "ip": "2804:8734:f102:c300:d843:cb4b:51ab:275e"
+    },
+    "products": [
+        {
+            "id": "PROD_67f17c9c1d118",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 6170
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "organicjLj67ee1a036443bff423ea3626"
+    },
+    "commission": {
+        "totalPriceInCents": 6170,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 6170
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-04-05 18:55:24] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "7e477acd-ee0c-4590-948e-bcc328570284",
+    "platform": "Ghostspays",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-04-05 18:55:24",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Laura Silva Costa",
+        "email": "laura.silva.costa@email.com",
+        "phone": null,
+        "document": "37852438202",
+        "country": "BR",
+        "ip": "2a02:4780:13:1234::c6"
+    },
+    "products": [
+        {
+            "id": "PROD_67f17c9c1d118",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 6170
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "organicjLj67ee1a036443bff423ea3626",
+        "utm_campaign": null,
+        "utm_medium": null,
+        "utm_content": null,
+        "utm_term": null,
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 6170,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 6170
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-04-05 18:55:24] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-04-05 18:55:24] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------

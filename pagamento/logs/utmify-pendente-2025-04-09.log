@@ -1,0 +1,110 @@
+[2025-04-09 18:45:44] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"743b248f-1510-4232-b162-eb7097875c50\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-04-09 18:45:44\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Alice Ribeiro Lopes\",\"email\":\"alice.ribeiro.lopes@email.com\",\"phone\":null,\"document\":\"68413388988\",\"country\":\"BR\",\"ip\":\"2804:8734:f102:c300:7845:81e0:e6e2:9e04\"},\"products\":[{\"id\":\"PROD_67f6c058bb9eb\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":6170}],\"trackingParameters\":{\"utm_source\":\"organic\"},\"commission\":{\"totalPriceInCents\":6170,\"gatewayFeeInCents\":0,\"userCommissionInCents\":6170},\"isTest\":false}"
+}
+----------------------------------------
+[2025-04-09 18:45:44] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "743b248f-1510-4232-b162-eb7097875c50",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-04-09 18:45:44",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Alice Ribeiro Lopes",
+        "email": "alice.ribeiro.lopes@email.com",
+        "phone": null,
+        "document": "68413388988",
+        "country": "BR",
+        "ip": "2804:8734:f102:c300:7845:81e0:e6e2:9e04"
+    },
+    "products": [
+        {
+            "id": "PROD_67f6c058bb9eb",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 6170
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "organic"
+    },
+    "commission": {
+        "totalPriceInCents": 6170,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 6170
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-04-09 18:45:44] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "743b248f-1510-4232-b162-eb7097875c50",
+    "platform": "Ghostspays",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-04-09 18:45:44",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Alice Ribeiro Lopes",
+        "email": "alice.ribeiro.lopes@email.com",
+        "phone": null,
+        "document": "68413388988",
+        "country": "BR",
+        "ip": "2a02:4780:13:1234::c6"
+    },
+    "products": [
+        {
+            "id": "PROD_67f6c058bb9eb",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 6170
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "organic",
+        "utm_campaign": null,
+        "utm_medium": null,
+        "utm_content": null,
+        "utm_term": null,
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 6170,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 6170
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-04-09 18:45:44] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-04-09 18:45:44] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------

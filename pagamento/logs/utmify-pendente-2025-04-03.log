@@ -1,0 +1,115 @@
+[2025-04-03 03:59:12] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"7432db83-62c6-4a7a-99fe-052976edbd43\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-04-03 03:59:12\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Sofia Rodrigues Silva\",\"email\":\"sofia.rodrigues.silva@email.com\",\"phone\":null,\"document\":\"01444077953\",\"country\":\"BR\",\"ip\":\"2a09:bac5:5a9:2555::3b8:8f\"},\"products\":[{\"id\":\"PROD_67ee07900a362\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":6170}],\"trackingParameters\":{\"utm_source\":\"FBjLj67edff4dbf9e5b5d4ee0710e\",\"utm_medium\":\"SIGMABOY|120219999282530295\",\"utm_campaign\":\"[Gov] Ctv5 \\u2014 C\\u00f3pia|120219999281700295\",\"utm_content\":\"Novo an\\u00fancio de Vendas|120219999281490295\",\"utm_term\":\"Facebook_Desktop_Feed\",\"xcod\":\"FBhQwK21wXxR[Gov] Ctv5 \\u2014 C\\u00f3pia|120219999281700295hQwK21wXxRSIGMABOY|120219999282530295hQwK21wXxRNovo an\\u00fancio de Vendas|120219999281490295hQwK21wXxRFacebook_Desktop_Feed\"},\"commission\":{\"totalPriceInCents\":6170,\"gatewayFeeInCents\":0,\"userCommissionInCents\":6170},\"isTest\":false}"
+}
+----------------------------------------
+[2025-04-03 03:59:12] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "7432db83-62c6-4a7a-99fe-052976edbd43",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-04-03 03:59:12",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Sofia Rodrigues Silva",
+        "email": "sofia.rodrigues.silva@email.com",
+        "phone": null,
+        "document": "01444077953",
+        "country": "BR",
+        "ip": "2a09:bac5:5a9:2555::3b8:8f"
+    },
+    "products": [
+        {
+            "id": "PROD_67ee07900a362",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 6170
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj67edff4dbf9e5b5d4ee0710e",
+        "utm_medium": "SIGMABOY|120219999282530295",
+        "utm_campaign": "[Gov] Ctv5 \u2014 C\u00f3pia|120219999281700295",
+        "utm_content": "Novo an\u00fancio de Vendas|120219999281490295",
+        "utm_term": "Facebook_Desktop_Feed",
+        "xcod": "FBhQwK21wXxR[Gov] Ctv5 \u2014 C\u00f3pia|120219999281700295hQwK21wXxRSIGMABOY|120219999282530295hQwK21wXxRNovo an\u00fancio de Vendas|120219999281490295hQwK21wXxRFacebook_Desktop_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 6170,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 6170
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-04-03 03:59:12] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "7432db83-62c6-4a7a-99fe-052976edbd43",
+    "platform": "Ghostspays",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-04-03 03:59:12",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Sofia Rodrigues Silva",
+        "email": "sofia.rodrigues.silva@email.com",
+        "phone": null,
+        "document": "01444077953",
+        "country": "BR",
+        "ip": "2a02:4780:13:1234::c9"
+    },
+    "products": [
+        {
+            "id": "PROD_67ee07900a362",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 6170
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "FBjLj67edff4dbf9e5b5d4ee0710e",
+        "utm_campaign": "[Gov] Ctv5 \u2014 C\u00f3pia|120219999281700295",
+        "utm_medium": "SIGMABOY|120219999282530295",
+        "utm_content": "Novo an\u00fancio de Vendas|120219999281490295",
+        "utm_term": "Facebook_Desktop_Feed",
+        "xcod": "FBhQwK21wXxR[Gov] Ctv5 \u2014 C\u00f3pia|120219999281700295hQwK21wXxRSIGMABOY|120219999282530295hQwK21wXxRNovo an\u00fancio de Vendas|120219999281490295hQwK21wXxRFacebook_Desktop_Feed",
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 6170,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 6170
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-04-03 03:59:12] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-04-03 03:59:12] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
